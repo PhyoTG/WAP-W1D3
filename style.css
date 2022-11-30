@@ -1,0 +1,68 @@
+#banner{
+    grid-area: b;
+    position: relative;
+    text-align: center;
+    background-color: lightblue;
+    padding: 5%;
+    font-size: larger;
+}
+
+#nav{
+    grid-area: n;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(20, 78, 20);
+    color: #fff;
+}
+
+#nav div{
+    padding: 2%;
+    border: 1px solid #000;
+}
+
+#footer{
+    grid-area: f;
+    background-color: rgb(20, 78, 20);
+    color: #fff;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+#sidebar{
+    grid-area: s;
+    background-color: gray;
+    padding: 2% 0% 45% 4%;
+}
+
+#content{
+    grid-area: c;
+    background-color: lightgray;
+    padding: 2% 0% 45% 4%;
+}
+
+#right-sidebar{
+    grid-area: rs;
+    background-color: aliceblue;
+    padding: 2% 0% 45% 4%;
+}
+
+body{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "b b b"
+    "n n n"
+    "s c rs"
+    "f f f";
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        grid-template-areas: 
+        "b b "
+        "n n"
+        "s rs"
+        "c c"
+        "f f ";
+    }
+}
