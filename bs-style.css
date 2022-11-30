@@ -1,0 +1,36 @@
+.column-detail:nth-child(1){
+    background-color: gray;
+    padding: 2% 0% 25% 4%;
+}
+
+.column-detail:nth-child(2){
+    background-color: lightgray;
+    padding: 2% 0% 25% 4%;
+}
+
+.column-detail:nth-child(3){
+    background-color: aliceblue;
+    padding: 2% 0% 25% 4%;
+}
+
+.footer{
+    background-color: rgb(20, 78, 20);
+    color: #fff;
+    padding: 2% 1%;
+    text-align: center;
+    display: block;
+}
+
+.header{
+    text-align: center;
+    display: block;
+    background-color: aquamarine;
+}
+
+.container{
+    padding-left: 0%;
+}
+
+body{
+    font-family: sans-serif;
+}
